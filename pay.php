@@ -30,7 +30,15 @@ $payer = new MercadoPago\Payer();
     "zip_code" => "111"
   );
 $preference->items = array($item);
-$preference->installments = 6;
+$preference->payment_methods = array(
+  "excluded_payment_methods" => array(
+    array("id" => "amex")
+  ),
+  "excluded_payment_types" => array(
+    array("id" => "atm")
+  ),
+  "installments" => 6
+);
 $preference->external_reference="ABCD1234";
 $preference->auto_return="approved";
 $preference->back_urls = array(

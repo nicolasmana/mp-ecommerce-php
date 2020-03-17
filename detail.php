@@ -149,7 +149,7 @@ $unit=$_POST['unit'];
                                         <input type='hidden' name='unit_pay' id='unit_pay' value="<?php echo $unit ?>">
                                         <input type='hidden' name='item_pay' id='item_pay' value="<?php echo $title ?>">                                
 
-                                        <input type="submit"  value="Pagar" class="btn btn-primary btn-lg"  ></input>
+                                        <input type="submit"  value="Pagar la compra" class="btn btn-primary btn-lg"  ></input>
                                     </form>
 
 <!-- 
