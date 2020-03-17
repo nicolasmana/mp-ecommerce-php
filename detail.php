@@ -151,6 +151,15 @@ $unit=$_POST['unit'];
 
                                         <input type="submit"  value="Pagar" class="btn btn-primary btn-lg"  ></input>
                                     </form>
+
+<!-- 
+                                        <form action="/procesar-pago" method="POST">
+                                          <script
+                                           src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+                                          </script>
+                                        </form> -->
+
+
                                 </div>
                             </div>
                         </div>
