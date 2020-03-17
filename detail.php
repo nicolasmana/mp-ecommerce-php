@@ -1,5 +1,6 @@
 <?php  
 
+var_dump($_POST);
 $title=$_POST['title'];
 $price=$_POST['price'];
 $unit=$_POST['unit'];
@@ -144,9 +145,9 @@ $unit=$_POST['unit'];
 <!--                                     Acá redirigo a mi página e MP para pagar -->
 
                                     <form  align="center" class="align_middle" method="post" enctype="multipart/form-data" action="pay.php" novalidate>
-                                        <input type='hidden' name='price_pay' id='price_pay' value=<?php $price ?> >
-                                        <input type='hidden' name='unit_pay' id='unit_pay' value=<?php $unit ?>>
-                                        <input type='hidden' name='item_pay' id='item_pay' value=<?php $item ?>>
+                                        <input type='hidden' name='price_pay' id='price_pay' value="<?php $price ?>"< >
+                                        <input type='hidden' name='unit_pay' id='unit_pay' value="<?php $unit ?>">
+                                        <input type='hidden' name='item_pay' id='item_pay' value="<?php $item ?>">                                >
 
                                         <input type="submit"  value="Pagar" class="btn btn-primary btn-lg"  ></input>
                                     </form>
