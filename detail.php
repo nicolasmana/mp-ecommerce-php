@@ -147,7 +147,7 @@ $unit=$_POST['unit'];
                                     <form  align="center" class="align_middle" method="post" enctype="multipart/form-data" action="pay.php" novalidate>
                                         <input type='hidden' name='price_pay' id='price_pay' value="<?php echo $price ?>"< >
                                         <input type='hidden' name='unit_pay' id='unit_pay' value="<?php echo $unit ?>">
-                                        <input type='hidden' name='item_pay' id='item_pay' value="<?php echo $item ?>">                                
+                                        <input type='hidden' name='item_pay' id='item_pay' value="<?php echo $title ?>">                                
 
                                         <input type="submit"  value="Pagar" class="btn btn-primary btn-lg"  ></input>
                                     </form>
